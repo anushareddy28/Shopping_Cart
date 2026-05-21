@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products - SmartCart Admin</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="sidebar-logo">Smart<span>Cart</span></div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="orders.html">Orders</a>
+                <a href="coupons.html">Coupons</a>
+                <a href="users.html">Users</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="../index.html">View Store</a><br>
+                <a href="#" id="adminLogout">Logout</a>
+            </div>
+        </aside>
+        <main class="admin-main">
+            <div class="admin-header">
+                <h1>Products</h1>
+                <button class="btn btn-primary btn-sm" id="addProductBtn">Add Product</button>
+            </div>
+            <div class="admin-card">
+                <div id="productsTableContainer">
+                    <div class="loading"><span class="spinner"></span> Loading products...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="productModal"></div>
+    <button class="admin-mobile-toggle" id="sidebarToggle">&#9776;</button>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>
+
