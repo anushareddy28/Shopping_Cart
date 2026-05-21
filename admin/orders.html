@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders - SmartCart Admin</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="sidebar-logo">Smart<span>Cart</span></div>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="orders.html" class="active">Orders</a>
+                <a href="coupons.html">Coupons</a>
+                <a href="users.html">Users</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="../index.html">View Store</a><br>
+                <a href="#" id="adminLogout">Logout</a>
+            </div>
+        </aside>
+        <main class="admin-main">
+            <div class="admin-header">
+                <h1>Orders</h1>
+            </div>
+            <div class="admin-card">
+                <div class="admin-toolbar">
+                    <select id="orderStatusFilter">
+                        <option value="">All Statuses</option>
+                        <option value="pending">Pending</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="packed">Packed</option>
+                        <option value="shipped">Shipped</option>
+                        <option value="delivered">Delivered</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+                <div id="ordersTableContainer">
+                    <div class="loading"><span class="spinner"></span> Loading orders...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <button class="admin-mobile-toggle" id="sidebarToggle">&#9776;</button>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>
+
