@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SmartCart</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar" id="adminSidebar">
+            <div class="sidebar-logo">Smart<span>Cart</span></div>
+            <nav>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="orders.html">Orders</a>
+                <a href="coupons.html">Coupons</a>
+                <a href="users.html">Users</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="../index.html">View Store</a><br>
+                <a href="#" id="adminLogout">Logout</a>
+            </div>
+        </aside>
+        <main class="admin-main">
+            <div class="admin-header">
+                <h1>Dashboard</h1>
+                <span class="admin-user" id="adminUserName"></span>
+            </div>
+            <div class="stats-grid" id="statsGrid">
+                <div class="loading"><span class="spinner"></span> Loading...</div>
+            </div>
+            <div class="admin-card">
+                <h2>Quick Actions</h2>
+                <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                    <a href="products.html" class="btn btn-primary btn-sm">Manage Products</a>
+                    <a href="orders.html" class="btn btn-outline btn-sm">View Orders</a>
+                    <a href="coupons.html" class="btn btn-outline btn-sm">Manage Coupons</a>
+                    <a href="users.html" class="btn btn-outline btn-sm">View Users</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <button class="admin-mobile-toggle" id="sidebarToggle">&#9776;</button>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>
+
