@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your SmartCart account">
+    <title>Register - SmartCart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Smart<span>Cart</span></a>
+            <ul class="nav-links">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h1>Create Account</h1>
+        <div id="formMsg"></div>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="regName">Full Name</label>
+                <input type="text" id="regName" name="name" required>
+                <div class="field-error" id="errName"></div>
+            </div>
+            <div class="form-group">
+                <label for="regEmail">Email Address</label>
+                <input type="email" id="regEmail" name="email" required>
+                <div class="field-error" id="errEmail"></div>
+            </div>
+            <div class="form-group">
+                <label for="regPhone">Phone Number (optional)</label>
+                <input type="tel" id="regPhone" name="phone">
+                <div class="field-error" id="errPhone"></div>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" name="password" required minlength="8">
+                <div class="field-error" id="errPassword"></div>
+            </div>
+            <div class="form-group">
+                <label for="regConfirm">Confirm Password</label>
+                <input type="password" id="regConfirm" name="confirm_password" required>
+                <div class="field-error" id="errConfirm"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="regSubmitBtn">Register</button>
+        </form>
+        <p class="form-footer">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <footer class="site-footer">
+        <p>SmartCart &copy; 2025</p>
+    </footer>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
+
