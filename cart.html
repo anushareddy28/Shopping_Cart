@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart on SmartCart">
+    <title>Cart - SmartCart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">Smart<span>Cart</span></a>
+            <button class="hamburger" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html" class="cart-link">Cart <span class="cart-badge" id="cartBadge" style="display:none">0</span></a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li id="authNav"></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <h1 class="page-title">Shopping Cart</h1>
+        <div id="cartContainer">
+            <div class="loading"><span class="spinner"></span> Loading cart...</div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>SmartCart &copy; 2025</p>
+    </footer>
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>
+
